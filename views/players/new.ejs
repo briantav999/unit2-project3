@@ -18,8 +18,25 @@
     
         <label for="canShoot">Can they Shoot?</label>
         <input type="checkbox" name="canShoot" />
+
+        <label for="position">Position:</label>
+        <select name="position" id="position">
+            <option value="">Select Position</option>
+            <option value="Point Guard">Point Guard</option>
+            <option value="Shooting Guard">Shooting Guard</option>
+            <option value="Small Forward">Small Forward</option>
+            <option value="Power Forward">Power Forward</option>
+            <option value="Center">Center</option>
+        </select>
+
+        <label for="shootingHand" id="shootingLabel">Shooting Hand:</label>
+        <select name="shootingHand" id="shootingHand">
+            <option value="">Select Shooting Hand:</option>
+            <option value="Right">Right</option>
+            <option value="Left">Left</option> 
+        </select>
     
-        <button type="submit">Create Player</button>
+        <button type="submit" id="create">Create Player</button>
       </form>
       <a href="/players/">Back to Roster</a>
       

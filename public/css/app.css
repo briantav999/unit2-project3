@@ -31,8 +31,14 @@ a {
 }  
 h1 {
     color: white;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 5px -6px  rgba(239, 11, 11, 0.2);
     font-family: 'Jersey 20', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Add rounded corners */
+    padding: 10px 20px; /* Add padding around the text */
+    display: inline-block;
 }
 p {
     color: white;
@@ -91,5 +97,19 @@ input[type="text"], input[type="checkbox"] {
 
 #height {
     width: 90px;
+    margin: auto;
+}
+#position {
+    margin-bottom: 10px;
+    width: 110px;
+    margin: auto;
+}
+#create {
+    margin-top: 15px;
+}
+#shootingLabel {
+    margin-top: 20px;
+}
+#shootingHand {
     margin: auto;
 }
