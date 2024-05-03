@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Create</title>
+</head>
+<body>
+    <h1>Create a Player</h1>
+    <form action="/players" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="Height">Height:</label>
+        <input type="number" name="height" id="height" min="70" max="90" step="1" />
+        <p>Please enter height in inches (e.g., 70 for 5'10", 90 for 7'6")</p>
+    
+        <label for="canShoot">Can they Shoot?</label>
+        <input type="checkbox" name="canShoot" />
+    
+        <button type="submit">Create Player</button>
+      </form>
+      <a href="/players/">Back to Roster</a>
+      
+</body>
+</html>

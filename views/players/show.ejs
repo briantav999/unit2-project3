@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <%=player.name%>
+    </h1>
+   <% if(player.canShoot){ %>
+        <p>This Man Can Shoot!</p>
+   <%} else {%>
+        <p>This Man Cannot Shoot!</p>
+    <% }%>
+    <form action="/players/<%=player._id%>?_method=DELETE" method="POST">
+        <button>Delete <%= player.name %></button>
+    </form>
+    <a href="/players">Back to Roster</a>
+    <a href="/players/<%=player._id%>/edit">Update <%player.name%></a>
+</body>
+</html>
