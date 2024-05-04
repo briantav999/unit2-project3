@@ -113,3 +113,9 @@ input[type="text"], input[type="checkbox"] {
 #shootingHand {
     margin: auto;
 }
+#jerseyNumber {
+    margin: auto;
+}
+.jLabel {
+    margin-top: 20px;
+}

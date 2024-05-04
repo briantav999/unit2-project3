@@ -31,10 +31,13 @@
 
         <label for="shootingHand" id="shootingLabel">Shooting Hand:</label>
         <select name="shootingHand" id="shootingHand">
-            <option value="">Select Shooting Hand:</option>
+            <option value="">Select Shooting Hand</option>
             <option value="Right">Right</option>
             <option value="Left">Left</option> 
         </select>
+
+        <label for="jerseyNumber" class="jLabel">Jersey Number:</label>
+        <input type="number" name="jerseyNumber" id="jerseyNumber" min="0" max="99" step="1" />
     
         <button type="submit" id="create">Create Player</button>
       </form>
