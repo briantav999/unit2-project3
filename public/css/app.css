@@ -157,7 +157,7 @@ a {
     background-color: beige;
     padding: 15px;
     margin-right: 40px;
-    margin-top: -80px;
+    margin-top: -40px;
     border-radius: 10px;
     border: 2px solid maroon;
     transition: transform 0.2s ease-in-out;
@@ -226,4 +226,31 @@ a {
 }
 #bug {
     margin-top: -40px;
+    height: 600px;
+    margin-bottom: 10px;
+}
+#laugh {
+    background-color: beige;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 2px solid maroon;
+}
+#last {
+    background-color: beige;
+    padding: 15px;
+    margin-right: 40px;
+    margin-top: -40px;
+    border-radius: 10px;
+    border: 2px solid maroon;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block; 
+    text-decoration: none; 
+}
+#last:hover {
+    transform: translateY(-20px); 
+}
+#start {
+    color: orange;
+    border: 4px solid orange;
 }
