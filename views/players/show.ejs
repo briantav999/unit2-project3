@@ -9,17 +9,22 @@
 <body>
     <h1>
         <%=player.name%><br>
-        <%=player.position%>
+        <%=player.position%><br>
+        <%=player.height%><br>
+        <%=player.shootingHand%> Handed<br>#
+        <%=player.jerseyNumber%>
+
+
     </h1>
    <% if(player.canShoot){ %>
         <p>This Man Can Shoot!</p>
    <%} else {%>
         <p>This Man Cannot Shoot!</p>
     <% }%>
-    <form action="/players/<%=player._id%>?_method=DELETE" method="POST">
+    <form action="/players/<%=player._id%>?_method=DELETE" method="POST" id="mylife">
         <button>Delete <%= player.name %></button>
     </form>
-    <a href="/players">Back to Roster</a>
-    <a href="/players/<%=player._id%>/edit">Update <%player.name%></a>
+    <a href="/players" id="roster">Back to Roster</a>
+    <a href="/players/<%=player._id%>/edit" id="others">Update <%player.name%></a>
 </body>
 </html>

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const playerSchema = new mongoose.Schema({
   name: String,
-  height: Number,
+  height: String,
   canShoot: Boolean,
   position: String,
   shootingHand: String,

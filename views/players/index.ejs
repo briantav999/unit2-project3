@@ -8,16 +8,17 @@
 </head>
 <body>
     <h1>Full Roster</h1>
-    <ul>
-        <% players.forEach((player) => {%> 
-          <li>
-            <a href="/players/<%=player._id%>">
-            <%=player.name%>
-            </a>
-            </li><%  
-        }); %>
-        
-    </ul>
-    <a href="/players/new">Create New Player</a>
+    <div class="freedom">
+        <ul id="homel">
+            <% players.forEach((player) => {%> 
+            <li>
+                <a href="/players/<%=player._id%>">
+                <%=player.name%>
+                </a>
+                </li><%  
+            }); %>
+        </ul>
+    </div>
+    <a href="/players/new" id="site">Create New Player</a>
 </body>
 </html>
