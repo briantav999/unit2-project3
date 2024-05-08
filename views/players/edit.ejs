@@ -41,7 +41,7 @@
     
         
             <label for="canShoot">Can He Shoot?</label>
-            <input type="checkbox" name="canShoot" 
+            <input type="checkbox" name="canShoot" id="check"
                 <% if(player.canShoot){%>
                     checked
                 <%}%>
@@ -69,6 +69,6 @@
             <button type="submit" id="submitb">Update Player</button>
         </form>
     </div>
-      <a href="/players/">Back to Roster</a>
+      <a href="/players/" id="hero">Back to Roster</a>
 </body>
 </html>

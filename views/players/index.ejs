@@ -7,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Full Roster</h1>
+    <h1 id="nineteen">Full Roster</h1>
     <div class="freedom">
         <ul id="homel">
             <% players.forEach((player) => {%> 
             <li>
-                <a href="/players/<%=player._id%>">
+                <a href="/players/<%=player._id%>" id="break">
                 <%=player.name%>
                 </a>
                 </li><%  

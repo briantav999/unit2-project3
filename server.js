@@ -51,12 +51,15 @@ app.get('/players/new', (req,res)=> {
     res.render('players/new.ejs')
 })
 
-app.get('/players/:playerId/edit', async (req,res)=>{
-    const foundPlayer = await Player.findById(req.params.playerId)
-    res.render('players/edit.ejs', {
-        player: foundPlayer
-    })
-})
+app.get('/players/:playerId/edit', async (req, res) => {
+    try {
+        const foundPlayer = await Player.findById(req.params.playerId);
+        res.render('players/edit.ejs', { player: foundPlayer });
+    } catch (error) {
+        console.error('Error fetching player data:', error);
+        res.status(500).send('Error fetching player data');
+    }
+});
 
 
 app.put('/players/:playerId', async (req,res)=>{
@@ -65,6 +68,7 @@ app.put('/players/:playerId', async (req,res)=>{
     } else {
         req.body.canShoot = false
     }
+    if(req.body)
     await Player.findByIdAndUpdate(req.params.playerId, req.body)
     res.redirect('/players')
 })
